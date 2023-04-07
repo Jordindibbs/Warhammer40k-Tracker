@@ -1,11 +1,7 @@
-.column {
-    float: left;
-    width: 25%;
-  }
+.row {
+  display: flex;
+}
 
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.column {
+  flex: 75%;
+}
