@@ -16,11 +16,57 @@
                     </div>
                     <div class="panel-body">
                         <h4>Turn Order</h4>
-                        <input type ='text' class='player1-tactical' />
-                        <h4>Player 1 CP</h4>
-                        <input type ='text' class='player1-tactical' />
-                        <h4>Player 1 Faction</h4>
-                        <input type ='text' class='player1-tactical' />
+                        <form>
+                            <input type="radio" id="p1" name="turn-order" value="First">
+                            <label for="p1">First Player</label><br>
+                            <input type="radio" id="p2" name="turn-order" value="Second">
+                            <label for="p1">Second Player</label><br>
+                        </form>
+                        <br>
+                        <label for="quantity">Player 1 CP:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="18">
+                        <br>
+                        <label for="faction">Player 2 Faction:</label>
+                        <select id="faction" name="factions">
+                        <option value="spacemarines">Space Marines</option>
+                        <option value="ultramarines">Ultramarines</option>
+                        <option value="imperialfists">Imperial Fists</option>
+                        <option value="darkangels">Dark Angels</option>
+                        <option value="bloodangels">Blood Angels</option>
+                        <option value="salamanders">Salamanders</option>
+                        <option value="ironhands">Iron Hands</option>
+                        <option value="spacewolves">Space Wolves</option>
+                        <option value="whitescars">White Scars</option>
+                        <option value="ravenguard">Raven Guard</option>
+                        <option value="deathwatch">Deathwatch</option>
+                        <option value="greyknights">Grey Knights</option>
+                        <option value="spacemarines">Space Marines</option>
+                        <option value="ultramarines">Ultramarines</option>
+                        <option value="astramilitarum">Astra Militarum</option>
+                        <option value="adeptasororitas">Adepta Sororitas</option>
+                        <option value="adeptuscustodes">Adeptus Custodes</option>
+                        <option value="adeptusmechanicus">Adeptus Mechanicus</option>
+                        <option value="imperialknights">Imperial Knights</option>
+                        <option value="chaosdpacemarines">Chaos Space Marines</option>
+                        <option value="deathguard">Death Guard</option>
+                        <option value="thousandsons">Thousand Sons</option>
+                        <option value="worldeaters">World Eaters</option>
+                        <option value="chaosdaemonskhorne">Chaos Daemons Khorne</option>
+                        <option value="chaosdaemonsnurgle">Chaos Daemons Nurgle</option>
+                        <option value="chaosdaemonstzeentch">Chaos Daemons Tzeentch</option>
+                        <option value="chaosdaemonsslaanesh">Chaos Daemons Slaanesh</option>
+                        <option value="chaosknights">Chaos Knights</option>
+                        <option value="craftworlds">Craftworlds</option>
+                        <option value="drukhari">Drukhari</option>
+                        <option value="harlequins">Harlequins</option>
+                        <option value="ynnari">Ynnari</option>
+                        <option value="tyranids">Tyranids</option>
+                        <option value="genestealercults">Genestealer Cults</option>
+                        <option value="necrons">Necrons</option>
+                        <option value="orks">Orks</option>
+                        <option value="tauempire">Tau Empire</option>
+                        <option value="leaguesofvotann">Leagues of Votann</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -32,11 +78,57 @@
                     </div>
                     <div class="panel-body">
                         <h4>Turn Order</h4>
-                        <input type ='text' class='player2-tactical' />
-                        <h4>Player 2 CP</h4>
-                        <input type ='text' class='player2-tactical' />
-                        <h4>Player 2 Faction</h4>
-                        <input type ='text' class='player2-tactical' />
+                        <form>
+                            <input type="radio" id="p1" name="turn-order" value="First">
+                            <label for="p1">First Player</label><br>
+                            <input type="radio" id="p2" name="turn-order" value="Second">
+                            <label for="p1">Second Player</label><br>
+                        </form>
+                        <br>
+                        <label for="quantity">Player 1 CP:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="18">
+                        <br>
+                        <label for="faction">Player 2 Faction:</label>
+                        <select id="faction" name="factions">
+                        <option value="spacemarines">Space Marines</option>
+                        <option value="ultramarines">Ultramarines</option>
+                        <option value="imperialfists">Imperial Fists</option>
+                        <option value="darkangels">Dark Angels</option>
+                        <option value="bloodangels">Blood Angels</option>
+                        <option value="salamanders">Salamanders</option>
+                        <option value="ironhands">Iron Hands</option>
+                        <option value="spacewolves">Space Wolves</option>
+                        <option value="whitescars">White Scars</option>
+                        <option value="ravenguard">Raven Guard</option>
+                        <option value="deathwatch">Deathwatch</option>
+                        <option value="greyknights">Grey Knights</option>
+                        <option value="spacemarines">Space Marines</option>
+                        <option value="ultramarines">Ultramarines</option>
+                        <option value="astramilitarum">Astra Militarum</option>
+                        <option value="adeptasororitas">Adepta Sororitas</option>
+                        <option value="adeptuscustodes">Adeptus Custodes</option>
+                        <option value="adeptusmechanicus">Adeptus Mechanicus</option>
+                        <option value="imperialknights">Imperial Knights</option>
+                        <option value="chaosdpacemarines">Chaos Space Marines</option>
+                        <option value="deathguard">Death Guard</option>
+                        <option value="thousandsons">Thousand Sons</option>
+                        <option value="worldeaters">World Eaters</option>
+                        <option value="chaosdaemonskhorne">Chaos Daemons Khorne</option>
+                        <option value="chaosdaemonsnurgle">Chaos Daemons Nurgle</option>
+                        <option value="chaosdaemonstzeentch">Chaos Daemons Tzeentch</option>
+                        <option value="chaosdaemonsslaanesh">Chaos Daemons Slaanesh</option>
+                        <option value="chaosknights">Chaos Knights</option>
+                        <option value="craftworlds">Craftworlds</option>
+                        <option value="drukhari">Drukhari</option>
+                        <option value="harlequins">Harlequins</option>
+                        <option value="ynnari">Ynnari</option>
+                        <option value="tyranids">Tyranids</option>
+                        <option value="genestealercults">Genestealer Cults</option>
+                        <option value="necrons">Necrons</option>
+                        <option value="orks">Orks</option>
+                        <option value="tauempire">Tau Empire</option>
+                        <option value="leaguesofvotann">Leagues of Votann</option>
+                        </select>
                     </div>
                 </div>
             </div>
