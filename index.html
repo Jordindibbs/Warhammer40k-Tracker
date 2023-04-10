@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Tabletop Point Tracker</title>
+    <link rel="stylesheet" href="Basic.css" />
 </head>
+<body> 
 <h1 style="float: center"> 40K Point Tracker 9th Edition</h1>
 <p>
     <div class="container">
@@ -70,36 +72,42 @@
                         <option value="orks">Orks</option>
                         <option value="tauempire">Tau Empire</option>
                         <option value="leaguesofvotann">Leagues of Votann</option>
-                        </select> 
+                        </select>
                         <!--Primary Objectives-->
-                        <div>
-                            <table id="table">
-                                <tr>
-                                    <td>Primary Objective Round 2</td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td>15</td>
-                                </tr>
-                                <tr>
-                                    <td>Primary Objective Round 3</td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td>15</td>
-                                </tr>
-                                <tr>
-                                    <td>Primary Objective Round 4</td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td>15</td>
-                                </tr>
-                                <tr>
-                                    <td>Primary Objective Round 5</td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td>15</td>
-                                </tr>
-                            </table>
-                        </div>
+                                <div class='obj-chart'>
+                                    <h4>Primary Objective Round 2</h4>
+                                    <ul class='primaryobj'>
+                                      <li>5</li>
+                                      <li>10</li>
+                                      <li>15</li>
+                                    </ul>
+                                  </div>
+                                  <div class='obj-chart'>
+                                    <h4>Primary Objective Round 3</h4>
+                                    <ul class='primaryobj'>
+                                      <li>5</li>
+                                      <li>10</li>
+                                      <li>15</li>
+                                    </ul>
+                                  </div>
+                                  <div class='obj-chart'>
+                                    <h4>Primary Objective Round 4</h4>
+                                    <ul class='primaryobj'>
+                                      <li>5</li>
+                                      <li>10</li>
+                                      <li>15</li>
+                                    </ul>
+                                  </div>
+                                  <div class='obj-chart'>
+                                    <h4>Primary Objective Round 5</h4>
+                                    <ul class='primaryobj'>
+                                      <li>5</li>
+                                      <li>10</li>
+                                      <li>15</li>
+                                    </ul>
+                                  </div>
+                       <h4> Primary Obj Total:</h4>
+                       <!--Secondary Objectives-->
                         <div>
                             <label for="quantity">Secondary Objective 1</label>
                             <input type="number" id="quantity" name="quantity" min="0" max="15">
@@ -110,7 +118,9 @@
                             <label for="quantity">Secondary Objective 3</label>
                             <input type="number" id="quantity" name="quantity" min="0" max="15">
                             <br>
+                            <h4> Secondary Obj Total:</h4>
                         </div>
+                        <h3>Final Score:</h3>
                     </div>
                 </div>
             </div>
@@ -206,7 +216,8 @@
                                 </tr>
                             </table>
                         </div>
-                        <!--Primary Objectives-->
+                        <h4> Primary Obj Total:</h4>
+                        <!--Secondary Objectives-->
                         <div>
                             <label for="quantity">Secondary Objective 1</label>
                             <input type="number" id="quantity" name="quantity" min="0" max="15">
@@ -217,11 +228,19 @@
                             <label for="quantity">Secondary Objective 3</label>
                             <input type="number" id="quantity" name="quantity" min="0" max="15">
                             <br>
+                            <h4> Secondary Obj Total:</h4>
+                        </div>
+                        <h3>Final Score:</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 </p>
-<link rel="stylesheet" href="Basic.css" />
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src='/jQuery.js'></script> 
+</body>
 </html>

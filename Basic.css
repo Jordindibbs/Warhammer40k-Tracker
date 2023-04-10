@@ -1,7 +1,35 @@
 .row {
   display: flex;
 }
-
 .column {
   flex: 75%;
 }
+
+.panel-body .obj-chart {
+  display:flex;
+  background-color: #535353;
+  color: #EFEFEF; }
+  .panel-body .obj-chart .active {
+    background-color: #C3FF00;
+    color: #303030; }
+
+.panel-body .obj-chart,
+.panel-body {
+  padding: 1em 1.25em; }
+
+.panel-body .obj-chart ul,
+.panel-body ul li 
+{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em; }
+
+.panel-body .obj-chart ul,
+.panel-body ul li
+{
+  padding: 0.5em;
+  background-color: #303030;
+  width: 100%;
+  text-align: center;
+  margin-right: 2px; }
