@@ -3,6 +3,9 @@
   <head>
     <title>Tabletop Point Tracker</title>
     <link rel="stylesheet" href="Basic.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src='script.js'></script>
   </head>
 
   <body>
@@ -10,159 +13,20 @@
       <h1>40K Point Tracker 9th Edition</h1>
     </div>
     <div class="row">
-
       <!--Start of player 1 column-->
-      <div class="player1 column">
-
-        <div class="panel-heading">
+      <div class="player-column">
+        <div class="player-heading">
           <h3>Player 1</h3>
-          <input type="text" class="player1-tactical" />
+          <input type="text" />
         </div>
-
-        <div class="turn order">
-          <h4>Turn Order</h4>
-          <form>
-            <!-- Turn order radio selector -->
-            <input type="radio" id="p1" name="turn-order" value="First" />
-            <label for="p1">First Player</label><br />
-            <input type="radio" id="p2" name="turn-order" value="Second" />
-            <label for="p1">Second Player</label><br />
-          </form>
-        </div>
-
-      <div class="command points">
-        <!-- Command point selection -->
-        <label for="quantity">Player 1 CP:</label>
-        <input type="number" id="quantity" name="quantity" min="0" max="18" />
-      </div>
-
-       <div class="faction selection">
-        <!-- Faction selection-->
-        <label for="faction">Player 1 Faction:</label>
-        <select id="faction" name="factions">
-          <option value="spacemarines">Space Marines</option>
-          <option value="ultramarines">Ultramarines</option>
-          <option value="imperialfists">Imperial Fists</option>
-          <option value="darkangels">Dark Angels</option>
-          <option value="bloodangels">Blood Angels</option>
-          <option value="salamanders">Salamanders</option>
-          <option value="ironhands">Iron Hands</option>
-          <option value="spacewolves">Space Wolves</option>
-          <option value="whitescars">White Scars</option>
-          <option value="ravenguard">Raven Guard</option>
-          <option value="deathwatch">Deathwatch</option>
-          <option value="greyknights">Grey Knights</option>
-          <option value="spacemarines">Space Marines</option>
-          <option value="ultramarines">Ultramarines</option>
-          <option value="astramilitarum">Astra Militarum</option>
-          <option value="adeptasororitas">Adepta Sororitas</option>
-          <option value="adeptuscustodes">Adeptus Custodes</option>
-          <option value="adeptusmechanicus">Adeptus Mechanicus</option>
-          <option value="imperialknights">Imperial Knights</option>
-          <option value="chaosdpacemarines">Chaos Space Marines</option>
-          <option value="deathguard">Death Guard</option>
-          <option value="thousandsons">Thousand Sons</option>
-          <option value="worldeaters">World Eaters</option>
-          <option value="chaosdaemonskhorne">Chaos Daemons Khorne</option>
-          <option value="chaosdaemonsnurgle">Chaos Daemons Nurgle</option>
-          <option value="chaosdaemonstzeentch">Chaos Daemons Tzeentch</option>
-          <option value="chaosdaemonsslaanesh">Chaos Daemons Slaanesh</option>
-          <option value="chaosknights">Chaos Knights</option>
-          <option value="craftworlds">Craftworlds</option>
-          <option value="drukhari">Drukhari</option>
-          <option value="harlequins">Harlequins</option>
-          <option value="ynnari">Ynnari</option>
-          <option value="tyranids">Tyranids</option>
-          <option value="genestealercults">Genestealer Cults</option>
-          <option value="necrons">Necrons</option>
-          <option value="orks">Orks</option>
-          <option value="tauempire">Tau Empire</option>
-          <option value="leaguesofvotann">Leagues of Votann</option>
-        </select>
-    </div>
-
-        <!--Primary Objectives-->
-        <div class="primaries">
-          <h4>Primary Objective Round 2</h4>
-          <ul class="primaryobj">
-            <li>5</li>
-            <li>10</li>
-            <li>15</li>
-          </ul>
-        </div>
-        <div class="obj-chart">
-          <h4>Primary Objective Round 3</h4>
-          <ul class="primaryobj">
-            <li>5</li>
-            <li>10</li>
-            <li>15</li>
-          </ul>
-        </div>
-        <div class="obj-chart">
-          <h4>Primary Objective Round 4</h4>
-          <ul class="primaryobj">
-            <li>5</li>
-            <li>10</li>
-            <li>15</li>
-          </ul>
-        </div>
-        <div class="obj-chart">
-          <h4>Primary Objective Round 5</h4>
-          <ul class="primaryobj">
-            <li>5</li>
-            <li>10</li>
-            <li>15</li>
-          </ul>
-        </div>
-        <div class="primary totals">
-          <h4>Primary Obj Total:</h4>
-        </div>
-
-        <!--Secondary Objectives-->
-        <div class="secondaries">
-          <label for="quantity">Secondary Objective 1</label>
-          <input type="number" id="quantity" name="quantity" min="0" max="15" />
-          <br />
-          <label for="quantity">Secondary Objective 2</label>
-          <input type="number" id="quantity" name="quantity" min="0" max="15" />
-          <br />
-          <label for="quantity">Secondary Objective 3</label>
-          <input type="number" id="quantity" name="quantity" min="0" max="15" />
-          <br />
-          <h4>Secondary Obj Total:</h4>
-        </div>
-
-        <!--Final Score -->
-        <div class="final score">
-          <h3>Final Score:</h3>
-        </div>
-
-      
-    </div>
-
-    <!--Start of player 2 column-->
-    <div class="player2 column4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="">Player 2</h3>
-          <input type="text" class="player2-tactical" />
-        </div>
-        <div class="panel-body">
-          <h4>Turn Order</h4>
-          <form>
-            <!-- Turn order radio selector -->
-            <input type="radio" id="p1" name="turn-order" value="First" />
-            <label for="p1">First Player</label><br />
-            <input type="radio" id="p2" name="turn-order" value="Second" />
-            <label for="p1">Second Player</label><br />
-          </form>
-          <br />
           <!-- Command point selection -->
-          <label for="quantity">Player 2 CP:</label>
+        <div class="command-points">
+          <label for="quantity">Player 1 CP:</label>
           <input type="number" id="quantity" name="quantity" min="0" max="18" />
-          <br />
+        </div>
           <!-- Faction selection-->
-          <label for="faction">Player 2 Faction:</label>
+        <div class="faction-selection">
+          <label for="faction">Player 1 Faction:</label>
           <select id="faction" name="factions">
             <option value="spacemarines">Space Marines</option>
             <option value="ultramarines">Ultramarines</option>
@@ -203,77 +67,190 @@
             <option value="tauempire">Tau Empire</option>
             <option value="leaguesofvotann">Leagues of Votann</option>
           </select>
-          <!--Primary Objectives-->
-          <div>
-            <table id="table">
-              <tr>
-                <td>Primary Objective Round 2</td>
-                <td>5</td>
-                <td>10</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>Primary Objective Round 3</td>
-                <td>5</td>
-                <td>10</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>Primary Objective Round 4</td>
-                <td>5</td>
-                <td>10</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>Primary Objective Round 5</td>
-                <td>5</td>
-                <td>10</td>
-                <td>15</td>
-              </tr>
-            </table>
-          </div>
+        </div>
+
+        <!--Primary Objectives-->
+        <div class="primaries">
+        <h5>Primary Objective Round 2</h5>
+          <div class="prime-round">
+            <button value="10" class="add" name="button1" id="button1">Button 1</button>
+            <button value="20" class="add" name="button2" id="button2">Button 2</button>
+            <button value="50" class="add" name="button3" id="button3">Button 3</button>
+            <span></span>
+            
+        </div>
+        <div class="primaries">
+          <h5>Primary Objective Round 3</h5>
+            <div class="prime-round">
+              <button value="5" class="add" name="button1" id="button1">5</button>
+              <button value="10" class="add" name="button2" id="button2">10</button>
+              <button value="15" class="add" name="button3" id="button3">15</button>
+          </div>       
+          <div class="primaries">
+            <h5>Primary Objective Round 4</h5>
+            <div class="prime-round">
+              <button value="5" class="add" name="button1" id="button1">5</button>
+              <button value="10" class="add" name="button2" id="button2">10</button>
+              <button value="15" class="add" name="button3" id="button3">15</button>
+          </div>    
+          <div class="primaries">
+            <h5>Primary Objective Round 5</h5>
+            <div class="prime-round">
+              <button value="5" class="add" name="button1" id="button1">5</button>
+              <button value="10" class="add" name="button2" id="button2">10</button>
+              <button value="15" class="add" name="button3" id="button3">15</button>
+          </div>    
+        <div class="primary-total">
           <h4>Primary Obj Total:</h4>
-          <!--Secondary Objectives-->
-          <div>
-            <label for="quantity">Secondary Objective 1</label>
-            <input
-              type="number"
-              id="quantity"
-              name="quantity"
-              min="0"
-              max="15"
-            />
-            <br />
-            <label for="quantity">Secondary Objective 2</label>
-            <input
-              type="number"
-              id="quantity"
-              name="quantity"
-              min="0"
-              max="15"
-            />
-            <br />
-            <label for="quantity">Secondary Objective 3</label>
-            <input
-              type="number"
-              id="quantity"
-              name="quantity"
-              min="0"
-              max="15"
-            />
-            <br />
-            <h4>Secondary Obj Total:</h4>
-          </div>
+          <input name="value_sum" style="text-align:right" id="costs" value="" type="text" readonly>
+        </div>
+
+        <!--Secondary Objectives-->
+        <div class="secondaries">
+          <label for="quantity">Secondary Objective 1</label>
+          <input type="number" id="quantity" name="quantity" min="0" max="15" />
+          <br />
+          <label for="quantity">Secondary Objective 2</label>
+          <input type="number" id="quantity" name="quantity" min="0" max="15" />
+          <br />
+          <label for="quantity">Secondary Objective 3</label>
+          <input type="number" id="quantity" name="quantity" min="0" max="15" />
+          <br />
+          <h4>Secondary Obj Total:</h4>
+        </div>
+
+        <!--Final Score -->
+        <div class="final-score">
+          <h3>Final Score:</h3>
+        </div>
+      </div>
+
+      <!--Start of player 2 column-->
+      <div class="player-column">
+        <div class="player-heading">
+          <h3>Player 1</h3>
+          <input type="text" />
+        </div>
+
+        <div class="turn-order">
+          <h4>Turn Order</h4>
+          <form>
+            <!-- Turn order radio selector -->
+            <input type="radio" id="p1" name="turn-order" value="First" />
+            <label for="p1">First Player</label><br />
+            <input type="radio" id="p2" name="turn-order" value="Second" />
+            <label for="p1">Second Player</label><br />
+          </form>
+        </div>
+
+        <div class="command-points">
+          <!-- Command point selection -->
+          <label for="quantity">Player 1 CP:</label>
+          <input type="number" id="quantity" name="quantity" min="0" max="18" />
+        </div>
+
+        <div class="faction-selection">
+          <!-- Faction selection-->
+          <label for="faction">Player 1 Faction:</label>
+          <select id="faction" name="factions">
+            <option value="spacemarines">Space Marines</option>
+            <option value="ultramarines">Ultramarines</option>
+            <option value="imperialfists">Imperial Fists</option>
+            <option value="darkangels">Dark Angels</option>
+            <option value="bloodangels">Blood Angels</option>
+            <option value="salamanders">Salamanders</option>
+            <option value="ironhands">Iron Hands</option>
+            <option value="spacewolves">Space Wolves</option>
+            <option value="whitescars">White Scars</option>
+            <option value="ravenguard">Raven Guard</option>
+            <option value="deathwatch">Deathwatch</option>
+            <option value="greyknights">Grey Knights</option>
+            <option value="spacemarines">Space Marines</option>
+            <option value="ultramarines">Ultramarines</option>
+            <option value="astramilitarum">Astra Militarum</option>
+            <option value="adeptasororitas">Adepta Sororitas</option>
+            <option value="adeptuscustodes">Adeptus Custodes</option>
+            <option value="adeptusmechanicus">Adeptus Mechanicus</option>
+            <option value="imperialknights">Imperial Knights</option>
+            <option value="chaosdpacemarines">Chaos Space Marines</option>
+            <option value="deathguard">Death Guard</option>
+            <option value="thousandsons">Thousand Sons</option>
+            <option value="worldeaters">World Eaters</option>
+            <option value="chaosdaemonskhorne">Chaos Daemons Khorne</option>
+            <option value="chaosdaemonsnurgle">Chaos Daemons Nurgle</option>
+            <option value="chaosdaemonstzeentch">Chaos Daemons Tzeentch</option>
+            <option value="chaosdaemonsslaanesh">Chaos Daemons Slaanesh</option>
+            <option value="chaosknights">Chaos Knights</option>
+            <option value="craftworlds">Craftworlds</option>
+            <option value="drukhari">Drukhari</option>
+            <option value="harlequins">Harlequins</option>
+            <option value="ynnari">Ynnari</option>
+            <option value="tyranids">Tyranids</option>
+            <option value="genestealercults">Genestealer Cults</option>
+            <option value="necrons">Necrons</option>
+            <option value="orks">Orks</option>
+            <option value="tauempire">Tau Empire</option>
+            <option value="leaguesofvotann">Leagues of Votann</option>
+          </select>
+        </div>
+
+        <!--Primary Objectives-->
+        <div class="primaries">
+          <h4>Primary Objective Round 2</h4>
+          <ul class="primaryobj">
+            <li>5</li>
+            <li>10</li>
+            <li>15</li>
+          </ul>
+        </div>
+        <div class="primaries">
+          <h4>Primary Objective Round 3</h4>
+          <ul class="primaryobj">
+            <li>5</li>
+            <li>10</li>
+            <li>15</li>
+          </ul>
+        </div>
+        <div class="primaries">
+          <h4>Primary Objective Round 4</h4>
+          <ul class="primaryobj">
+            <li>5</li>
+            <li>10</li>
+            <li>15</li>
+          </ul>
+        </div>
+        <div class="primaries">
+          <h4>Primary Objective Round 5</h4>
+          <ul class="primaryobj">
+            <li>5</li>
+            <li>10</li>
+            <li>15</li>
+          </ul>
+        </div>
+        <div class="primary-total">
+          <h4>Primary Obj Total:</h4>
+        </div>
+
+        <!--Secondary Objectives-->
+        <div class="secondaries">
+          <label for="quantity">Secondary Objective 1</label>
+          <input type="number" id="quantity" name="quantity" min="0" max="15" />
+          <br />
+          <label for="quantity">Secondary Objective 2</label>
+          <input type="number" id="quantity" name="quantity" min="0" max="15" />
+          <br />
+          <label for="quantity">Secondary Objective 3</label>
+          <input type="number" id="quantity" name="quantity" min="0" max="15" />
+          <br />
+          <h4>Secondary Obj Total:</h4>
+        </div>
+
+        <!--Final Score -->
+        <div class="final-score">
           <h3>Final Score:</h3>
         </div>
       </div>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="/jQuery.js"></script>
-  </body>
+</body>
 </html>
