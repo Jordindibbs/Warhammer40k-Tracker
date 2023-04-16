@@ -1,11 +1,12 @@
+html {
+  display: flex;
+}
 body {
-  background-color: #fff;
   margin: 0 auto;
 }
-header {
-  background-color: #466995;
-  border-bottom: 1px solid #466995;
-  position: fixed;
+.header {
+  border: 1px solid #466995;
+  position: center;
   width: 100%;
   z-index: 10;
 }
@@ -37,70 +38,81 @@ h5 {
   text-transform: uppercase;
   display: inline-block;
 }
+
 .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.player-column {
+  display: inline-block;
+  border: 1px solid #466995;
+  width: 500px;
+  height: 400px;
+}
+.player-heading {
+  background-color: #d6dbe2;
+  border: 1px solid #466995;
+  position: center;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.player-heading.text {
+  position: center;
+  text-align: center;
+}
+/*Player Tactical Selection*/
+.player-army {
+  background-color: #d6dbe2;
+  border: 1px solid #466995;
+  padding: 5px;
   display: flex;
 }
-
+.player-cp {
+  flex: 1;
+}
+.player-faction {
+  flex: 1;
+}
+/*Primary Objective*/
+.primaries {
+  flex: auto;
+  display: inline-block;
+  padding: 5px;
+}
+.prime-round {
+  flex: initial;
+  display: inline-block;
+}
+/*Button Settings*/
 button {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   border: 1px solid #000;
   background-color: #d6dbe2;
-  display: inline-block;
+  float: left;
 }
-button:active {
+.selected {
   background-color: #466995;
 }
 
-.player-column {
-  display: inline-block;
-  width: 500px;
-  height: 400px;
-}
-
-.player-heading {
-  background-color: #535353;
-  color: #efefef;
-  margin: 5px;
-  border: 3px solid blue;
-  padding: 25px;
-  height: 20px;
-  width: 200px;
-  position: auto;
-}
-
-.command-points {
-  background-color: #535353;
-  color: #efefef;
-  margin: 0 auto;
-  border: 3px solid blue;
-  padding: 25px;
-  height: 20px;
-  width: 200px;
-  overflow: hidden;
-}
-.faction-selection {
-  background-color: #535353;
-  color: #efefef;
-  margin: 0 auto;
-  border: 3px solid blue;
-  padding: 25px;
-  height: 20px;
-  width: 200px;
-  overflow: hidden;
-}
-.primaries {
-  position: relative;
-}
-.prime-round {
-  justify-content: flex-start;
-}
+/*Secondary Objective*/
 .secondaries {
+  display: inline-grid;
+  justify-content: space-between;
+  position: center;
+  width: 400px;
+}
+.secondary-buttons {
+  display: inline-grid;
   background-color: #303030;
-  width: 100%;
   text-align: center;
-  margin: 2px;
+  grid-template-columns: auto auto auto auto auto;
+}
+/*Scoring*/
+.primary-total {
+  flex: 1;
 }
 .secondary-total {
   display: flex;
