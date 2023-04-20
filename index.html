@@ -17,399 +17,1237 @@
 
     <!--Start of player 1 column-->
     <div class="player-column">
-      <div class="player-heading">
-        <h3>Player 1</h3>
-        <input type="text" />
-      </div>
-
-      <!-- Command point selection -->
-      <div class="player-army">
-        <div class="player-cp">
-          <label for="quantity">CP:</label>
-          <input type="number" id="quantity" name="quantity" min="0" max="18" />
+      <div class="player-info">
+        <div class="player-heading">
+          <h3>Player 1</h3>
+          <input type="text" class="player-name" />
         </div>
 
-        <!-- Faction selection-->
-        <div class="player-faction">
-          <label for="faction">Faction:</label>
-          <select id="faction" name="factions">
-            <option value="spacemarines">Space Marines</option>
-            <option value="ultramarines">Ultramarines</option>
-            <option value="imperialfists">Imperial Fists</option>
-            <option value="darkangels">Dark Angels</option>
-            <option value="bloodangels">Blood Angels</option>
-            <option value="salamanders">Salamanders</option>
-            <option value="ironhands">Iron Hands</option>
-            <option value="spacewolves">Space Wolves</option>
-            <option value="whitescars">White Scars</option>
-            <option value="ravenguard">Raven Guard</option>
-            <option value="deathwatch">Deathwatch</option>
-            <option value="greyknights">Grey Knights</option>
-            <option value="spacemarines">Space Marines</option>
-            <option value="ultramarines">Ultramarines</option>
-            <option value="astramilitarum">Astra Militarum</option>
-            <option value="adeptasororitas">Adepta Sororitas</option>
-            <option value="adeptuscustodes">Adeptus Custodes</option>
-            <option value="adeptusmechanicus">Adeptus Mechanicus</option>
-            <option value="imperialknights">Imperial Knights</option>
-            <option value="chaosdpacemarines">Chaos Space Marines</option>
-            <option value="deathguard">Death Guard</option>
-            <option value="thousandsons">Thousand Sons</option>
-            <option value="worldeaters">World Eaters</option>
-            <option value="chaosdaemonskhorne">Chaos Daemons Khorne</option>
-            <option value="chaosdaemonsnurgle">Chaos Daemons Nurgle</option>
-            <option value="chaosdaemonstzeentch">Chaos Daemons Tzeentch</option>
-            <option value="chaosdaemonsslaanesh">Chaos Daemons Slaanesh</option>
-            <option value="chaosknights">Chaos Knights</option>
-            <option value="craftworlds">Craftworlds</option>
-            <option value="drukhari">Drukhari</option>
-            <option value="harlequins">Harlequins</option>
-            <option value="ynnari">Ynnari</option>
-            <option value="tyranids">Tyranids</option>
-            <option value="genestealercults">Genestealer Cults</option>
-            <option value="necrons">Necrons</option>
-            <option value="orks">Orks</option>
-            <option value="tauempire">Tau Empire</option>
-            <option value="leaguesofvotann">Leagues of Votann</option>
-          </select>
+        <!-- Command point selection -->
+        <div class="player-army">
+          <div class="player-cp">
+            <label for="quantity">CP:</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="0"
+              max="18"
+            />
+          </div>
+
+          <!-- Faction selection-->
+          <div class="player-faction">
+            <label for="faction">Faction:</label>
+            <select id="faction" name="factions">
+              <option value="spacemarines">Space Marines</option>
+              <option value="ultramarines">Ultramarines</option>
+              <option value="imperialfists">Imperial Fists</option>
+              <option value="darkangels">Dark Angels</option>
+              <option value="bloodangels">Blood Angels</option>
+              <option value="salamanders">Salamanders</option>
+              <option value="ironhands">Iron Hands</option>
+              <option value="spacewolves">Space Wolves</option>
+              <option value="whitescars">White Scars</option>
+              <option value="ravenguard">Raven Guard</option>
+              <option value="deathwatch">Deathwatch</option>
+              <option value="greyknights">Grey Knights</option>
+              <option value="spacemarines">Space Marines</option>
+              <option value="ultramarines">Ultramarines</option>
+              <option value="astramilitarum">Astra Militarum</option>
+              <option value="adeptasororitas">Adepta Sororitas</option>
+              <option value="adeptuscustodes">Adeptus Custodes</option>
+              <option value="adeptusmechanicus">Adeptus Mechanicus</option>
+              <option value="imperialknights">Imperial Knights</option>
+              <option value="chaosdpacemarines">Chaos Space Marines</option>
+              <option value="deathguard">Death Guard</option>
+              <option value="thousandsons">Thousand Sons</option>
+              <option value="worldeaters">World Eaters</option>
+              <option value="chaosdaemonskhorne">Chaos Daemons Khorne</option>
+              <option value="chaosdaemonsnurgle">Chaos Daemons Nurgle</option>
+              <option value="chaosdaemonstzeentch">
+                Chaos Daemons Tzeentch
+              </option>
+              <option value="chaosdaemonsslaanesh">
+                Chaos Daemons Slaanesh
+              </option>
+              <option value="chaosknights">Chaos Knights</option>
+              <option value="craftworlds">Craftworlds</option>
+              <option value="drukhari">Drukhari</option>
+              <option value="harlequins">Harlequins</option>
+              <option value="ynnari">Ynnari</option>
+              <option value="tyranids">Tyranids</option>
+              <option value="genestealercults">Genestealer Cults</option>
+              <option value="necrons">Necrons</option>
+              <option value="orks">Orks</option>
+              <option value="tauempire">Tau Empire</option>
+              <option value="leaguesofvotann">Leagues of Votann</option>
+            </select>
+          </div>
         </div>
       </div>
-
       <!--Primary Objectives-->
-      <div class="primaries">
-        <h5>Primary Objective Round 2</h5>
+      <div class="primeobj">
+        <div class="primaries">
+          <h5>Primary Objective Round 2</h5>
+        </div>
+        <div class="prime-round">
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            5
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            10
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            15
+          </button>
+          <br />
+        </div>
       </div>
-      <div class="prime-round">
-        <button type="score" value="5" class="add" name="button1" id="button1">
-          5
-        </button>
-        <button type="score" value="5" class="add" name="button2" id="button2">
-          10
-        </button>
-        <button type="score" value="5" class="add" name="button3" id="button3">
-          15
-        </button>
-        <br />
+      <div class="primeobj">
+        <div class="primaries">
+          <h5>Primary Objective Round 3</h5>
+        </div>
+        <div class="prime-round">
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            5
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            10
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            15
+          </button>
+          <br />
+        </div>
       </div>
-      <div class="primaries">
-        <h5>Primary Objective Round 3</h5>
+      <div class="primeobj">
+        <div class="primaries">
+          <h5>Primary Objective Round 4</h5>
+        </div>
+        <div class="prime-round">
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            5
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            10
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            15
+          </button>
+          <br />
+        </div>
       </div>
-      <div class="prime-round">
-        <button type="score" value="5" class="add" name="button1" id="button1">
-          5
-        </button>
-        <button type="score" value="5" class="add" name="button2" id="button2">
-          10
-        </button>
-        <button type="score" value="5" class="add" name="button3" id="button3">
-          15
-        </button>
-        <br />
-      </div>
-      <div class="primaries">
-        <h5>Primary Objective Round 4</h5>
-      </div>
-      <div class="prime-round">
-        <button type="score" value="5" class="add" name="button1" id="button1">
-          5
-        </button>
-        <button type="score" value="5" class="add" name="button2" id="button2">
-          10
-        </button>
-        <button type="score" value="5" class="add" name="button3" id="button3">
-          15
-        </button>
-        <br />
-      </div>
-      <div class="primaries">
-        <h5>Primary Objective Round 5</h5>
-      </div>
-      <div class="prime-round">
-        <button type="score" value="5" class="add" name="button1" id="button1">
-          5
-        </button>
-        <button type="score" value="5" class="add" name="button2" id="button2">
-          10
-        </button>
-        <button type="score" value="5" class="add" name="button3" id="button3">
-          15
-        </button>
-        <br />
+      <div class="primeobj">
+        <div class="primaries">
+          <h5>Primary Objective Round 5</h5>
+        </div>
+        <div class="prime-round">
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            5
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            10
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime"
+            name="button-prime"
+            id="button-prime"
+          >
+            15
+          </button>
+          <br />
+        </div>
       </div>
       <div class="primary-total">
-        <h4>Primary Obj Total:</h4>
+        <h4>Primary Total:</h4>
+        <span class="player1prime"> 0</span>/45
       </div>
 
       <!--Secondary Objectives-->
       <div class="secondaries">
-        <h5>Secondary Objective 1</h5>
-        <input type="text" />
-        <div class="secondary-buttons">
-          <button type="button" id="b1" class="small_btn">1</button>
-          <button type="button" id="b2" class="small_btn">2</button>
-          <button type="button" id="b3" class="small_btn">3</button>
-          <button type="button" id="b4" class="small_btn">4</button>
-          <button type="button" id="b5" class="small_btn">5</button>
-          <button type="button" id="b5" class="small_btn">6</button>
-          <button type="button" id="b5" class="small_btn">7</button>
-          <button type="button" id="b5" class="small_btn">8</button>
-          <button type="button" id="b5" class="small_btn">9</button>
-          <button type="button" id="b5" class="small_btn">10</button>
-          <button type="button" id="b5" class="small_btn">11</button>
-          <button type="button" id="b5" class="small_btn">12</button>
-          <button type="button" id="b5" class="small_btn">13</button>
-          <button type="button" id="b5" class="small_btn">14</button>
-          <button type="button" id="b5" class="small_btn">15</button>
+        <div class="secondobj">
+          <div class="secondary-name">
+            <h5>Secondary 1</h5>
+            <input type="text" />
+          </div>
+          <div class="secondary-buttons">
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              3
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              4
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              5
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              6
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              7
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              8
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              9
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              10
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              11
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              12
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              13
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              14
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              15
+            </button>
+          </div>
         </div>
-
-        <h5>Secondary Objective 2</h5>
-        <input type="text" />
-        <div class="secondary-buttons">
-          <button type="button" id="b1" class="small_btn">1</button>
-          <button type="button" id="b2" class="small_btn">2</button>
-          <button type="button" id="b3" class="small_btn">3</button>
-          <button type="button" id="b4" class="small_btn">4</button>
-          <button type="button" id="b5" class="small_btn">5</button>
-          <button type="button" id="b5" class="small_btn">6</button>
-          <button type="button" id="b5" class="small_btn">7</button>
-          <button type="button" id="b5" class="small_btn">8</button>
-          <button type="button" id="b5" class="small_btn">9</button>
-          <button type="button" id="b5" class="small_btn">10</button>
-          <button type="button" id="b5" class="small_btn">11</button>
-          <button type="button" id="b5" class="small_btn">12</button>
-          <button type="button" id="b5" class="small_btn">13</button>
-          <button type="button" id="b5" class="small_btn">14</button>
-          <button type="button" id="b5" class="small_btn">15</button>
+        <div class="secondobj">
+          <div class="secondary-name">
+            <h5>Secondary 2</h5>
+            <input type="text" />
+          </div>
+          <div class="secondary-buttons">
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              3
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              4
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              5
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              6
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              7
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              8
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              9
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              10
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              11
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              12
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              13
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              14
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              15
+            </button>
+          </div>
         </div>
-
-        <h5>Secondary Objective 3</h5>
-        <input type="text" />
-        <div class="secondary-buttons">
-          <button type="button" id="b1" class="small_btn">1</button>
-          <button type="button" id="b2" class="small_btn">2</button>
-          <button type="button" id="b3" class="small_btn">3</button>
-          <button type="button" id="b4" class="small_btn">4</button>
-          <button type="button" id="b5" class="small_btn">5</button>
-          <button type="button" id="b5" class="small_btn">6</button>
-          <button type="button" id="b5" class="small_btn">7</button>
-          <button type="button" id="b5" class="small_btn">8</button>
-          <button type="button" id="b5" class="small_btn">9</button>
-          <button type="button" id="b5" class="small_btn">10</button>
-          <button type="button" id="b5" class="small_btn">11</button>
-          <button type="button" id="b5" class="small_btn">12</button>
-          <button type="button" id="b5" class="small_btn">13</button>
-          <button type="button" id="b5" class="small_btn">14</button>
-          <button type="button" id="b5" class="small_btn">15</button>
+        <div class="secondobj">
+          <div class="secondary-name">
+            <h5>Secondary 3</h5>
+            <input type="text" />
+          </div>
+          <div class="secondary-buttons">
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              3
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              4
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              5
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              6
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              7
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              8
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              9
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              10
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              11
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              12
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              13
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              14
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn"
+              id="button-secondary"
+            >
+              15
+            </button>
+          </div>
         </div>
       </div>
 
       <div class="secondary-total">
-        <h4>Secondary Obj Total:</h4>
+        <h4>Secondary Total:</h4>
+        <span class="player1secondary"> 0</span>/45
       </div>
       <!--Final Score -->
       <div class="final-score">
         <h3>Final Score:</h3>
+        <span class="player1total"> 0</span>/90
       </div>
     </div>
 
-    <!--Start of player 2 column-->
+    <!------------------------------------------------Start of player 2 column--------------------------------------------------->
     <div class="player-column">
-      <div class="player-heading">
-        <h3>Player</h3>
-        <input type="text" />
-      </div>
-
-      <!-- Command point selection -->
-      <div class="player-army">
-        <div class="player-cp">
-          <label for="quantity">CP:</label>
-          <input type="number" id="quantity" name="quantity" min="0" max="18" />
+      <div class="player-info">
+        <div class="player-heading">
+          <h3>Player 2</h3>
+          <input type="text" class="player-name" />
         </div>
 
-        <!-- Faction selection-->
-        <div class="player-faction">
-          <label for="faction">Faction:</label>
-          <select id="faction" name="factions">
-            <option value="spacemarines">Space Marines</option>
-            <option value="ultramarines">Ultramarines</option>
-            <option value="imperialfists">Imperial Fists</option>
-            <option value="darkangels">Dark Angels</option>
-            <option value="bloodangels">Blood Angels</option>
-            <option value="salamanders">Salamanders</option>
-            <option value="ironhands">Iron Hands</option>
-            <option value="spacewolves">Space Wolves</option>
-            <option value="whitescars">White Scars</option>
-            <option value="ravenguard">Raven Guard</option>
-            <option value="deathwatch">Deathwatch</option>
-            <option value="greyknights">Grey Knights</option>
-            <option value="spacemarines">Space Marines</option>
-            <option value="ultramarines">Ultramarines</option>
-            <option value="astramilitarum">Astra Militarum</option>
-            <option value="adeptasororitas">Adepta Sororitas</option>
-            <option value="adeptuscustodes">Adeptus Custodes</option>
-            <option value="adeptusmechanicus">Adeptus Mechanicus</option>
-            <option value="imperialknights">Imperial Knights</option>
-            <option value="chaosdpacemarines">Chaos Space Marines</option>
-            <option value="deathguard">Death Guard</option>
-            <option value="thousandsons">Thousand Sons</option>
-            <option value="worldeaters">World Eaters</option>
-            <option value="chaosdaemonskhorne">Chaos Daemons Khorne</option>
-            <option value="chaosdaemonsnurgle">Chaos Daemons Nurgle</option>
-            <option value="chaosdaemonstzeentch">Chaos Daemons Tzeentch</option>
-            <option value="chaosdaemonsslaanesh">Chaos Daemons Slaanesh</option>
-            <option value="chaosknights">Chaos Knights</option>
-            <option value="craftworlds">Craftworlds</option>
-            <option value="drukhari">Drukhari</option>
-            <option value="harlequins">Harlequins</option>
-            <option value="ynnari">Ynnari</option>
-            <option value="tyranids">Tyranids</option>
-            <option value="genestealercults">Genestealer Cults</option>
-            <option value="necrons">Necrons</option>
-            <option value="orks">Orks</option>
-            <option value="tauempire">Tau Empire</option>
-            <option value="leaguesofvotann">Leagues of Votann</option>
-          </select>
+        <!-- Command point selection -->
+        <div class="player-army">
+          <div class="player-cp">
+            <label for="quantity">CP:</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="0"
+              max="18"
+            />
+          </div>
+
+          <!-- Faction selection-->
+          <div class="player-faction">
+            <label for="faction">Faction:</label>
+            <select id="faction" name="factions">
+              <option value="spacemarines">Space Marines</option>
+              <option value="ultramarines">Ultramarines</option>
+              <option value="imperialfists">Imperial Fists</option>
+              <option value="darkangels">Dark Angels</option>
+              <option value="bloodangels">Blood Angels</option>
+              <option value="salamanders">Salamanders</option>
+              <option value="ironhands">Iron Hands</option>
+              <option value="spacewolves">Space Wolves</option>
+              <option value="whitescars">White Scars</option>
+              <option value="ravenguard">Raven Guard</option>
+              <option value="deathwatch">Deathwatch</option>
+              <option value="greyknights">Grey Knights</option>
+              <option value="spacemarines">Space Marines</option>
+              <option value="ultramarines">Ultramarines</option>
+              <option value="astramilitarum">Astra Militarum</option>
+              <option value="adeptasororitas">Adepta Sororitas</option>
+              <option value="adeptuscustodes">Adeptus Custodes</option>
+              <option value="adeptusmechanicus">Adeptus Mechanicus</option>
+              <option value="imperialknights">Imperial Knights</option>
+              <option value="chaosdpacemarines">Chaos Space Marines</option>
+              <option value="deathguard">Death Guard</option>
+              <option value="thousandsons">Thousand Sons</option>
+              <option value="worldeaters">World Eaters</option>
+              <option value="chaosdaemonskhorne">Chaos Daemons Khorne</option>
+              <option value="chaosdaemonsnurgle">Chaos Daemons Nurgle</option>
+              <option value="chaosdaemonstzeentch">
+                Chaos Daemons Tzeentch
+              </option>
+              <option value="chaosdaemonsslaanesh">
+                Chaos Daemons Slaanesh
+              </option>
+              <option value="chaosknights">Chaos Knights</option>
+              <option value="craftworlds">Craftworlds</option>
+              <option value="drukhari">Drukhari</option>
+              <option value="harlequins">Harlequins</option>
+              <option value="ynnari">Ynnari</option>
+              <option value="tyranids">Tyranids</option>
+              <option value="genestealercults">Genestealer Cults</option>
+              <option value="necrons">Necrons</option>
+              <option value="orks">Orks</option>
+              <option value="tauempire">Tau Empire</option>
+              <option value="leaguesofvotann">Leagues of Votann</option>
+            </select>
+          </div>
         </div>
       </div>
-
       <!--Primary Objectives-->
-      <div class="primaries">
-        <h5>Primary Objective Round 2</h5>
+      <div class="primeobj">
+        <div class="primaries">
+          <h5>Primary Objective Round 2</h5>
+        </div>
+        <div class="prime-round">
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            5
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            10
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            15
+          </button>
+          <br />
+        </div>
       </div>
-      <div class="prime-round">
-        <button type="score" value="5" class="add" name="button1" id="button1">
-          5
-        </button>
-        <button type="score" value="5" class="add" name="button2" id="button2">
-          10
-        </button>
-        <button type="score" value="5" class="add" name="button3" id="button3">
-          15
-        </button>
-        <br />
+      <div class="primeobj">
+        <div class="primaries">
+          <h5>Primary Objective Round 3</h5>
+        </div>
+        <div class="prime-round">
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            5
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            10
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            15
+          </button>
+          <br />
+        </div>
       </div>
-      <div class="primaries">
-        <h5>Primary Objective Round 3</h5>
+      <div class="primeobj">
+        <div class="primaries">
+          <h5>Primary Objective Round 4</h5>
+        </div>
+        <div class="prime-round">
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            5
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            10
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            15
+          </button>
+          <br />
+        </div>
       </div>
-      <div class="prime-round">
-        <button type="score" value="5" class="add" name="button1" id="button1">
-          5
-        </button>
-        <button type="score" value="5" class="add" name="button2" id="button2">
-          10
-        </button>
-        <button type="score" value="5" class="add" name="button3" id="button3">
-          15
-        </button>
-        <br />
-      </div>
-      <div class="primaries">
-        <h5>Primary Objective Round 4</h5>
-      </div>
-      <div class="prime-round">
-        <button type="score" value="5" class="add" name="button1" id="button1">
-          5
-        </button>
-        <button type="score" value="5" class="add" name="button2" id="button2">
-          10
-        </button>
-        <button type="score" value="5" class="add" name="button3" id="button3">
-          15
-        </button>
-        <br />
-      </div>
-      <div class="primaries">
-        <h5>Primary Objective Round 5</h5>
-      </div>
-      <div class="prime-round">
-        <button type="score" value="5" class="add" name="button1" id="button1">
-          5
-        </button>
-        <button type="score" value="5" class="add" name="button2" id="button2">
-          10
-        </button>
-        <button type="score" value="5" class="add" name="button3" id="button3">
-          15
-        </button>
-        <br />
+      <div class="primeobj">
+        <div class="primaries">
+          <h5>Primary Objective Round 5</h5>
+        </div>
+        <div class="prime-round">
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            5
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            10
+          </button>
+          <button
+            type="score"
+            value="5"
+            class="button-prime2"
+            name="button-prime2"
+            id="button-prime2"
+          >
+            15
+          </button>
+          <br />
+        </div>
       </div>
       <div class="primary-total">
-        <h4>Primary Obj Total:</h4>
+        <h4>Primary Total:</h4>
+        <span class="player2prime"> 0</span>/45
       </div>
 
       <!--Secondary Objectives-->
       <div class="secondaries">
-        <h5>Secondary Objective 1</h5>
-        <input type="text" />
-        <div class="secondary-buttons">
-          <button type="button" id="b1" class="small_btn">1</button>
-          <button type="button" id="b2" class="small_btn">2</button>
-          <button type="button" id="b3" class="small_btn">3</button>
-          <button type="button" id="b4" class="small_btn">4</button>
-          <button type="button" id="b5" class="small_btn">5</button>
-          <button type="button" id="b5" class="small_btn">6</button>
-          <button type="button" id="b5" class="small_btn">7</button>
-          <button type="button" id="b5" class="small_btn">8</button>
-          <button type="button" id="b5" class="small_btn">9</button>
-          <button type="button" id="b5" class="small_btn">10</button>
-          <button type="button" id="b5" class="small_btn">11</button>
-          <button type="button" id="b5" class="small_btn">12</button>
-          <button type="button" id="b5" class="small_btn">13</button>
-          <button type="button" id="b5" class="small_btn">14</button>
-          <button type="button" id="b5" class="small_btn">15</button>
+        <div class="secondobj">
+          <div class="secondary-name">
+            <h5>Secondary 1</h5>
+            <input type="text" />
+          </div>
+          <div class="secondary-buttons">
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              3
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              4
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              5
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              6
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              7
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              8
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              9
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              10
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              11
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              12
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              13
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              14
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              15
+            </button>
+          </div>
         </div>
-        <br />
-        <h5>Secondary Objective 2</h5>
-        <input type="text" />
-        <div class="secondary-buttons">
-          <button type="button" id="b1" class="small_btn">1</button>
-          <button type="button" id="b2" class="small_btn">2</button>
-          <button type="button" id="b3" class="small_btn">3</button>
-          <button type="button" id="b4" class="small_btn">4</button>
-          <button type="button" id="b5" class="small_btn">5</button>
-          <button type="button" id="b5" class="small_btn">6</button>
-          <button type="button" id="b5" class="small_btn">7</button>
-          <button type="button" id="b5" class="small_btn">8</button>
-          <button type="button" id="b5" class="small_btn">9</button>
-          <button type="button" id="b5" class="small_btn">10</button>
-          <button type="button" id="b5" class="small_btn">11</button>
-          <button type="button" id="b5" class="small_btn">12</button>
-          <button type="button" id="b5" class="small_btn">13</button>
-          <button type="button" id="b5" class="small_btn">14</button>
-          <button type="button" id="b5" class="small_btn">15</button>
+        <div class="secondobj">
+          <div class="secondary-name">
+            <h5>Secondary 2</h5>
+            <input type="text" />
+          </div>
+          <div class="secondary-buttons">
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              3
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              4
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              5
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              6
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              7
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              8
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              9
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              10
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              11
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              12
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              13
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              14
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              15
+            </button>
+          </div>
         </div>
-        <br />
-        <h5>Secondary Objective 3</h5>
-        <input type="text" />
-        <div class="secondary-buttons">
-          <button type="button" id="b1" class="small_btn">1</button>
-          <button type="button" id="b2" class="small_btn">2</button>
-          <button type="button" id="b3" class="small_btn">3</button>
-          <button type="button" id="b4" class="small_btn">4</button>
-          <button type="button" id="b5" class="small_btn">5</button>
-          <button type="button" id="b5" class="small_btn">6</button>
-          <button type="button" id="b5" class="small_btn">7</button>
-          <button type="button" id="b5" class="small_btn">8</button>
-          <button type="button" id="b5" class="small_btn">9</button>
-          <button type="button" id="b5" class="small_btn">10</button>
-          <button type="button" id="b5" class="small_btn">11</button>
-          <button type="button" id="b5" class="small_btn">12</button>
-          <button type="button" id="b5" class="small_btn">13</button>
-          <button type="button" id="b5" class="small_btn">14</button>
-          <button type="button" id="b5" class="small_btn">15</button>
+        <div class="secondobj">
+          <div class="secondary-name">
+            <h5>Secondary 3</h5>
+            <input type="text" />
+          </div>
+          <div class="secondary-buttons">
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              3
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              4
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              5
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              6
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              7
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              8
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              9
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              10
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              11
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              12
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              13
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              14
+            </button>
+            <button
+              type="button"
+              value="1"
+              class="small_btn2"
+              id="button-secondary"
+            >
+              15
+            </button>
+          </div>
         </div>
       </div>
 
-      <br />
       <div class="secondary-total">
-        <h4>Secondary Obj Total:</h4>
+        <h4>Secondary Total:</h4>
+        <span class="player2secondary"> 0</span>/45
       </div>
       <!--Final Score -->
       <div class="final-score">
         <h3>Final Score:</h3>
+        <span class="player2total"> 0</span>/90
       </div>
     </div>
 
+    <!--End of P2 Column-->
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,44 +1,31 @@
 html {
   display: flex;
+  font-family: "Oswald", sans-serif;
+  color: #466995;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
 }
 body {
   margin: 0 auto;
 }
 .header {
-  border: 1px solid #466995;
   position: center;
-  width: 100%;
-  z-index: 10;
+  text-align: center;
+  background-color: #d6dbe2;
+  border: 1px solid #466995;
+  margin: 3px;
 }
 h3 {
-  color: #466995;
-  font-family: "Oswald", sans-serif;
   font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
 }
 h4 {
-  color: #466995;
-  font-family: "Oswald", sans-serif;
   font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
 }
 h5 {
-  color: #466995;
-  font-family: "Oswald", sans-serif;
   font-size: 12px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-align: left;
-  text-transform: uppercase;
   display: inline-block;
 }
-
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -46,37 +33,49 @@ h5 {
 }
 .player-column {
   display: inline-block;
-  border: 1px solid #466995;
   width: 500px;
   height: 400px;
+  text-align: center;
 }
-.player-heading {
+.selected {
+  background-color: #a2c11c;
+}
+/*Player Info*/
+.player-info {
   background-color: #d6dbe2;
   border: 1px solid #466995;
-  position: center;
-  text-align: center;
+  margin: 3px;
+}
+.player-heading {
+  position: left;
   padding-bottom: 5px;
 }
-.player-heading.text {
+.player-name {
   position: center;
-  text-align: center;
+  width: 350px;
+  height: 50px;
+  font-size: 30px;
 }
 /*Player Tactical Selection*/
 .player-army {
-  background-color: #d6dbe2;
-  border: 1px solid #466995;
   padding: 5px;
   display: flex;
 }
 .player-cp {
-  flex: 1;
+  flex: auto;
 }
 .player-faction {
-  flex: 1;
+  flex: auto;
 }
 /*Primary Objective*/
+.primeobj {
+  background-color: #d6dbe2;
+  border: 1px solid #466995;
+  margin: 3px;
+}
 .primaries {
   flex: auto;
+  align-items: center;
   display: inline-block;
   padding: 5px;
 }
@@ -84,43 +83,75 @@ h5 {
   flex: initial;
   display: inline-block;
 }
-/*Button Settings*/
-button {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border: 1px solid #000;
-  background-color: #d6dbe2;
-  float: left;
+#button-prime {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #466995;
 }
-.selected {
-  background-color: #466995;
+#button-prime2 {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #466995;
 }
 
+.button-inactive {
+  background-color: #283739;
+}
+.selected {
+  background-color: #a2c11c;
+}
+/*Primary Score*/
+.primary-total {
+  background-color: #d6dbe2;
+  border: 1px solid #466995;
+  margin: 3px;
+  align-items: center;
+  display: flex;
+  padding-left: 150px;
+}
+.player1prime {
+  display: inline-block;
+}
 /*Secondary Objective*/
 .secondaries {
-  display: inline-grid;
-  justify-content: space-between;
-  position: center;
-  width: 400px;
+  display: center;
+}
+.secondobj {
+  background-color: #d6dbe2;
+  border: 1px solid #466995;
+  margin: 3px;
+  padding: 5px;
+}
+.secondary-name {
+  display: inline-block;
+  align-items: center;
 }
 .secondary-buttons {
   display: inline-grid;
-  background-color: #303030;
-  text-align: center;
   grid-template-columns: auto auto auto auto auto;
+  vertical-align: middle;
 }
-/*Scoring*/
-.primary-total {
-  flex: 1;
+#button-secondary {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #466995;
+  padding: 1px;
 }
+/*Secondary Score*/
 .secondary-total {
+  background-color: #d6dbe2;
+  border: 1px solid #466995;
+  margin: 3px;
+  align-items: center;
   display: flex;
-  background-color: #535353;
-  color: #efefef;
+  padding-left: 150px;
 }
+/*Final Score*/
 .final-score {
+  background-color: #d6dbe2;
+  border: 1px solid #466995;
+  margin: 3px;
+  align-items: center;
   display: flex;
-  background-color: #535353;
-  color: #efefef;
+  padding-left: 150px;
 }
