@@ -2,6 +2,7 @@ html {
   display: flex;
   font-family: "Oswald", sans-serif;
   color: #466995;
+  background-color: #eeeeee;
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
@@ -40,6 +41,18 @@ h5 {
 .selected {
   background-color: #a2c11c;
 }
+
+@media (min-width: 480px) {
+  .player-column {
+    margin-inline-start: 0;
+    margin-block-start: 2rem;
+    text-align: center;
+  }
+  .primary-total {
+    text-align: center;
+  }
+}
+
 /*Player Info*/
 .player-info {
   background-color: #d6dbe2;
@@ -55,14 +68,21 @@ h5 {
   width: 350px;
   height: 50px;
   font-size: 30px;
+  text-align: center;
 }
 /*Player Tactical Selection*/
 .player-army {
   padding: 5px;
   display: flex;
 }
+.player-role {
+  flex: auto;
+}
 .player-cp {
   flex: auto;
+}
+.cp-input {
+  text-align: center;
 }
 .player-faction {
   flex: auto;
@@ -136,6 +156,21 @@ h5 {
   width: 20px;
   border: 1px solid #466995;
   padding: 1px;
+}
+/**/
+.obj-input {
+  position: center;
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+.gambit-input {
+  position: center;
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
 }
 /*Secondary Score*/
 .secondary-total {

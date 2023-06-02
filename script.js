@@ -23,15 +23,19 @@ $(document).ready(() => {
 
   $(".small_btn").click(function () {
     if (theTotal2 < 45) {
-      theTotal2 = Number(theTotal2) + Number($(this).val());
+      theTotal2 = Number($(this).val());
       $("span.player1secondary").text(theTotal2);
+      $(".small_btn").not(this).removeClass("selected");
       $(this).toggleClass("selected");
-      $(this).attr("value", $(this).val() * -1);
+      $(this).attr("value", $(this).val() * 0);
+
       $("span.player1total").text(theTotal + theTotal2);
     }
   });
 
   $("span.player1secondary").text(theTotal2);
+
+  /**/
 
   /*Toggles score for primary Obj Player 2*/
 
